@@ -1,4 +1,4 @@
-# LLMs
+# LLM
 
 En el ámbito de la inteligencia artificial y el procesamiento del lenguaje natural, los "LLMs" se refieren a modelos de lenguaje de gran tamaño.
 
