@@ -4,6 +4,8 @@
 
 Un modelo de lenguaje de gran tamaño (LLM) es un modelo de aprendizaje automático que ha sido entrenado en un conjunto de datos masivo de texto y código. Los LLMs son capaces de generar texto, traducir idiomas, escribir diferentes tipos de contenido creativo y responder preguntas de manera informativa.
 
+---
+
 # RAG
 
 [Q&A with RAG](https://python.langchain.com/docs/use_cases/question_answering/)
@@ -58,11 +60,15 @@ En el contexto de la inteligencia artificial, los VectorStores juegan un papel f
 
 ![VectorStores](https://python.langchain.com/assets/images/vector_stores-125d1675d58cfb46ce9054c9019fea72.jpg "VectorStores")
 
+---
+
 # Fine-tuning
 
 [The Ultimate Guide to LLM Fine Tuning: Best Practices & Tools](https://www.lakera.ai/blog/llm-fine-tuning-guide)
 
 [Fine-tuning - OpenAI API](https://platform.openai.com/docs/guides/fine-tuning)
+
+[A guide on how to Finetune Large Language Models (LLMs)](https://blog.monsterapi.ai/fine-tune-a-large-language-model-llm-guide-2023/)
 
 En el ámbito del aprendizaje profundo, el fine-tuning (ajuste fino) es una técnica de transferencia de aprendizaje que implica tomar un modelo pre-entrenado y adaptarlo a una tarea más específica.
 
