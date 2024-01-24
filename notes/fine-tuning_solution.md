@@ -8,7 +8,7 @@ https://platform.openai.com/docs/guides/fine-tuning
 
 [A guide on how to Finetune Large Language Models (LLMs)](https://blog.monsterapi.ai/fine-tune-a-large-language-model-llm-guide-2023/)
   
-Cuando se crea inicialmente un LLM, se somete a una capacitación previa, donde aprende de conjuntos de datos vastos y diversos para captar los matices del lenguaje y construir una base sólida para la comprensión general. Sin embargo, esta fase de preentrenamiento no convierte al modelo en un experto en ninguna tarea específica; simplemente lo dota de una amplia comprensión de los patrones del lenguaje.
+Cuando se crea inicialmente un LLM, se somete a una capacitación previa, donde aprende de conjuntos de datos y diversos para captar los matices del lenguaje y construir una base sólida para la comprensión general. Sin embargo, esta fase de preentrenamiento no convierte al modelo en un experto en ninguna tarea específica; simplemente lo dota de una amplia comprensión de los patrones del lenguaje.
 
 La necesidad de realizar ajustes surge porque cada aplicación o tarea tiene sus características y requisitos únicos. El amplio conocimiento adquirido durante la formación previa puede no ser suficiente para manejar las complejidades y matices de tareas específicas.
 
