@@ -1,6 +1,8 @@
-https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates
-https://openai.com/pricing
-https://platform.openai.com/docs/guides/fine-tuning
+[GPT-3.5 Turbo fine-tuning and API updates](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates)
+
+[Pricing](https://openai.com/pricing)
+
+[Fine-tuning - OpenAi API](https://platform.openai.com/docs/guides/fine-tuning)
 
 [The Ultimate Guide to LLM Fine Tuning: Best Practices & Tools](https://www.lakera.ai/blog/llm-fine-tuning-guide)
 
@@ -23,21 +25,3 @@ Seguridad y ética: el ajuste permite que el chatbot sea más cauteloso al propo
 Reducción de sesgos: ajustar el LLM en un conjunto de datos médicos diversos y representativos ayuda a mitigar los sesgos y promueve recomendaciones de atención médica justas y equitativas.
 
 En primer lugar, puede ayudar al modelo a aprender a generar respuestas más relevantes para el contexto de la pregunta. Esto se debe a que el fine-tuning permite al modelo ajustar sus parámetros en función de los datos de entrenamiento, que incluyen tanto la pregunta como la respuesta correcta. En segundo lugar, el fine-tuning puede ayudar al modelo a aprender a generar respuestas más completas y coherentes. Esto se debe a que el fine-tuning permite al modelo aprender a identificar las relaciones entre las diferentes partes de la respuesta.
-
----
-
-- Para modelos no tan grandes la formación previa puede que no sea suficiente para manejar lo complejo de algunas preguntas con respecto a un contenido entregado al moemento de hacer RAG.
-
-- Puede ayudar al modelo a aprender a generar respuestas más relevantes para el contexto de la pregunta.
-
-- Se entrana con una base de datos preguntas y respuestas correctas.
-
-- Esto tmabien puede ayudar al modelo a aprender a generar respuestas más completas y coherentes.
-
-- Esto, debido a que permite al modelo aprender a identificar las relaciones entre las diferentes partes de la pregunta y el contexto.
-
-- Hacking face.
-
-
-TRABAJO:
-- rag vs rag+fine-tuning
