@@ -1,0 +1,26 @@
+Rodolfo: Probar/Evaluar modelos respecto a su funcionamiento para ESTA TAREA.
+
+Evaluar robustes de la respuesta.
+
+Evaluar sistematicamente una pregunta que entrega malas respuesta.
+
+escribir a otro modelo que reescriba las pregunta y lanzar la misma pregunta
+
+problemas no inducidos, no le solicitamos que haga cosas malas pero las hace.
+
+mezcla distintas partes del documento hablando del mismo tema, pero en distinto contexto, o respionde con lo primero que encuentre
+
+---
+
+es importante para establecer un chatbot, preocurar que la pregunta este bien hecha no ambigua y especifica.
+
+si sacamos el embedding de la pregunta, si tiene cercania a demasiados vectores es muy general
+
+si tiene cercano a menos chunks la pregunta es mas especifica y de mejor calidad, quizas
+
+si uno no es tan esoecifico con estos modelos no tan grandes como chat gpt. ocurren errores
+
+---
+
+estudiando es la afinidad de la pregunta con los contenidos que utiliza, clave para generar buenas preguntas y evaluar las respuestas
+
