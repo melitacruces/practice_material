@@ -1,0 +1,17 @@
+{
+    
+    "id":"",
+    "msg": [{
+        "mensaje":"",
+        "prompt":"",
+        "set":["autoridad","urgencia","deseo","miedo","escasez","familiaridad","confianza","consenso"],
+        "llm":["name","temperature"],
+        "tecnica":"",
+        "idVictima":"",
+        "totalTokens": 0,
+        "observacion":""
+    }],
+    "tratamiento": [{
+        
+    }]
+}
