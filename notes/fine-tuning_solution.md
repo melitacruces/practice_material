@@ -7,19 +7,6 @@ https://platform.openai.com/docs/guides/fine-tuning
 [Fine-tuning - OpenAI API](https://platform.openai.com/docs/guides/fine-tuning)
 
 [A guide on how to Finetune Large Language Models (LLMs)](https://blog.monsterapi.ai/fine-tune-a-large-language-model-llm-guide-2023/)
-
----
-
-## Relación con LLM Security
-
-El fine-tuning puede aumentar la vulnerabilidad de los LLM a los ataques de seguridad. Esto se debe a que el fine-tuning puede causar que el modelo aprenda patrones en los datos de entrenamiento que pueden ser utilizados por los atacantes para explotar el modelo.
-
-**Algunos ejemplos de desafíos de seguridad asociados con el fine-tuning incluyen:**
-
-* Ataques de inyección de indicaciones: Los atacantes pueden intentar inyectar indicaciones maliciosas en los datos de entrenamiento para que el modelo aprenda patrones que puedan ser utilizados para realizar ataques, como ataques de phishing o de malware.
-* Fugas de datos: Los datos utilizados para el fine-tuning pueden contener información sensible que puede ser robada por los atacantes.
-* Acceso no autorizado: Los atacantes pueden intentar acceder al modelo o a los datos utilizados para el fine-tuning sin autorización.
-* ---
   
 Cuando se crea inicialmente un LLM, se somete a una capacitación previa, donde aprende de conjuntos de datos vastos y diversos para captar los matices del lenguaje y construir una base sólida para la comprensión general. Sin embargo, esta fase de preentrenamiento no convierte al modelo en un experto en ninguna tarea específica; simplemente lo dota de una amplia comprensión de los patrones del lenguaje.
 
