@@ -1,3 +1,5 @@
+EN EL DIRECTORIO compare_models SE REALIZARON LAS PRUEBAS
+
 [GPT-3.5 Turbo fine-tuning and API updates](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates)
 
 [Pricing](https://openai.com/pricing)
