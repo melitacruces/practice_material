@@ -1,0 +1,1 @@
+Algunos papers que pude recopilar con relación al fine-tuning, RAG y el enfrentamiento de estas aplicacines.

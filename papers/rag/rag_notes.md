@@ -19,7 +19,6 @@ Sirve para darle información al modelo, aumentar su ventana de contexto y que p
 ### Retrieval and Generation (recuperación  y generación):
 
 * **Retrieve:** Se recuperan las divisiones del almacenamiento gracias a [Retrievers](https://python.langchain.com/docs/modules/data_connection/retrievers/).
-
 * **Generate:** Generación de respuestas gracias a un [ChatModel](https://python.langchain.com/docs/modules/model_io/chat) ([LLM](https://python.langchain.com/docs/modules/model_io/llms/)).
 
 ![R&G](https://python.langchain.com/assets/images/rag_retrieval_generation-1046a4668d6bb08786ef73c56d4f228a.png "R&G")

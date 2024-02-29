@@ -1,29 +1,37 @@
-EN EL DIRECTORIO compare_models SE REALIZARON LAS PRUEBAS
+# [Fine-Tuning GPT-3.5 RAG Pipeline with GPT-4 Training Data](https://betterprogramming.pub/fine-tuning-gpt-3-5-rag-pipeline-with-gpt-4-training-data-49ac0c099919)
 
-[GPT-3.5 Turbo fine-tuning and API updates](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates)
+* GPT-3.5 Turbo
+  * https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates
+* LlamaIndex
+  * https://docs.llamaindex.ai/en/stable/examples/finetuning/openai_fine_tuning.html (REALIZAR ESTA PRUEBA)
+  * https://twitter.com/llama_index/status/1694116968008401201
+    * https://colab.research.google.com/drive/1NgyCJVyrC2xcZ5lxt2frTU862v6eJHlc?usp=sharing
 
-[Pricing](https://openai.com/pricing)
+## RAG vs Fine-Tuning
 
-[Fine-tuning - OpenAi API](https://platform.openai.com/docs/guides/fine-tuning)
+![](media/01.png)
 
-[The Ultimate Guide to LLM Fine Tuning: Best Practices & Tools](https://www.lakera.ai/blog/llm-fine-tuning-guide)
+![](media/02.png)
 
-[Fine-tuning - OpenAI API](https://platform.openai.com/docs/guides/fine-tuning)
+## RAG and Fine-Tuning
 
-[A guide on how to Finetune Large Language Models (LLMs)](https://blog.monsterapi.ai/fine-tune-a-large-language-model-llm-guide-2023/)
-  
-Cuando se crea inicialmente un LLM, se somete a una capacitación previa, donde aprende de conjuntos de datos y diversos para captar los matices del lenguaje y construir una base sólida para la comprensión general. Sin embargo, esta fase de preentrenamiento no convierte al modelo en un experto en ninguna tarea específica; simplemente lo dota de una amplia comprensión de los patrones del lenguaje.
+![](media/03.png)
 
-La necesidad de realizar ajustes surge porque cada aplicación o tarea tiene sus características y requisitos únicos. El amplio conocimiento adquirido durante la formación previa puede no ser suficiente para manejar las complejidades y matices de tareas específicas.
+![](media/04.png)
 
-He aquí por qué es tan importante realizar ajustes finos:
+Automatización de la generación de datos tanto para el conjunto de datos de evaluación como para el conjunto de datos de entrenamiento, utilizando DatasetGenerator.
+Evaluación para el modelo base gpt-3.5-turbo antes del ajuste fino, utilizando el conjunto de datos de evaluación generado en el paso 1.
+Construya un motor de consulta de índice vectorial y llame a gpt-4 para recopilar datos de entrenamiento basados ​​en el conjunto de datos de entrenamiento.
+El controlador de devolución de llamada OpenAIFineTuningHandlerrecopila todos los mensajes enviados a gpt-4, junto con sus respuestas, y guarda estos mensajes en un .jsonlformato (línea JSON) que puede ser consumido por el punto final de la API de OpenAI para realizar ajustes.
+OpenAIFinetuneEnginese construye pasando gpt-3.5-turbo y el jsonlarchivo generado en el paso 4, envía una finetunellamada a OpenAI, lanzando una solicitud de trabajo de ajuste a OpenAI.
+OpenAI crea el modelo gpt-3.5-turbo ajustado según su solicitud.
+Eval para un modelo ajustado utilizando el conjunto de datos de evaluación generado en el paso 1.
+En pocas palabras, esta integración de ajuste permite ajustar gpt-3.5-turbo en los datos de entrenamiento de gpt-4 y generar mejores respuestas.
 
-Conocimiento de dominio específico: el campo médico tiene su propia terminología y convenciones de lenguaje únicas. Para comprender plenamente la intrincada jerga médica necesaria para un diagnóstico preciso, es imprescindible realizar ajustes.
+---
 
-Comprensión contextual: perfeccionar el LLM con registros de pacientes y literatura médica relevante lo ayuda a contextualizar los síntomas y hacer predicciones más informadas.
+> https://betterprogramming.pub/fine-tuning-your-embedding-model-to-maximize-relevance-retrieval-in-rag-pipeline-2ea3fa231149)
 
-Seguridad y ética: el ajuste permite que el chatbot sea más cauteloso al proporcionar diagnósticos y recomendaciones.
+> https://medium.com/@bijit211987/fine-tuning-and-rag-tailoring-language-models-to-your-needs-69ca9e1c2c70
 
-Reducción de sesgos: ajustar el LLM en un conjunto de datos médicos diversos y representativos ayuda a mitigar los sesgos y promueve recomendaciones de atención médica justas y equitativas.
-
-En primer lugar, puede ayudar al modelo a aprender a generar respuestas más relevantes para el contexto de la pregunta. Esto se debe a que el fine-tuning permite al modelo ajustar sus parámetros en función de los datos de entrenamiento, que incluyen tanto la pregunta como la respuesta correcta. En segundo lugar, el fine-tuning puede ayudar al modelo a aprender a generar respuestas más completas y coherentes. Esto se debe a que el fine-tuning permite al modelo aprender a identificar las relaciones entre las diferentes partes de la respuesta.
+> https://blog.llamaindex.ai/fine-tuning-embeddings-for-rag-with-synthetic-data-e534409a3971)

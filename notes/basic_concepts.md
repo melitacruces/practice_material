@@ -1,7 +1,5 @@
 # LLM
 
-[Counterfit](https://www.microsoft.com/en-us/security/blog/2021/05/03/ai-security-risk-assessment-using-counterfit/)
-
 Un modelo de lenguaje de gran tamaño (LLM) es un modelo de aprendizaje automático que ha sido entrenado en un conjunto de datos masivo de texto y código. Los LLMs son capaces de generar texto, traducir idiomas, escribir diferentes tipos de contenido creativo y responder preguntas de manera informativa.
 
 ---
@@ -74,7 +72,7 @@ En el ámbito del aprendizaje profundo, el fine-tuning (ajuste fino) es una téc
 
 El ajuste es un paso crucial para mejorar los modelos de lenguajes grandes (LLMs) a través del aprendizaje por transferencia. Implica ajustar los parámetros de un LLM con datos específicos de la tarea, manteniendo su conocimiento de formación original.
 
-![](media/01_figure.png)
+![](media/01.png)
 
 ## Los pasos para hacer fine-tuning son los siguientes:
 

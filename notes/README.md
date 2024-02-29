@@ -1,0 +1,1 @@
+Aquí escribí algunas notas relacionadas con el tema, conceptos, ideas, posibles soluciones, etc.
